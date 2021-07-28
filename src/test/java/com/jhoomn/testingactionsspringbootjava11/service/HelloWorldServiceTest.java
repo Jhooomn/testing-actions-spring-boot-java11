@@ -18,5 +18,6 @@ public class HelloWorldServiceTest {
   public void helloWorldTest() {
     String response = defaultHelloWorldService.sayHello();
     Assertions.assertNotNull(response);
+    Assertions.assertEquals(response, "Hello");
   }
 }

@@ -21,5 +21,6 @@ public class HelloWorldControllerTest {
     Mockito.when(helloWorldService.sayHello()).thenReturn("Hello");
     val response = helloWorldController.sayHelloEndPoint();
     Assertions.assertEquals(response.getStatusCode(), HttpStatus.OK);
+    Assertions.assertEquals(response.getBody(), "Hello");
   }
 }
