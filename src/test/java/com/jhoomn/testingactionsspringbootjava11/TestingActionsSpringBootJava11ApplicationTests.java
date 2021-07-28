@@ -14,8 +14,13 @@ class TestingActionsSpringBootJava8ApplicationTests {
   private static final String B_VALUE = "A";
 
   @Test
-  public void mainTest() throws Exception {
+   void mainTest() throws Exception {
     assertNotNull(new TestingActionsSpringBootJava11Application());
+  }
+
+  @Test
+  void mainStatisTest() throws Exception {
+    TestingActionsSpringBootJava11Application.main(new String[0]);
   }
 
   @Test
