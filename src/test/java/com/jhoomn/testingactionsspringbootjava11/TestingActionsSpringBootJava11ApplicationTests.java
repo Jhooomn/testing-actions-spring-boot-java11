@@ -1,6 +1,7 @@
 package com.jhoomn.testingactionsspringbootjava11;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +12,11 @@ class TestingActionsSpringBootJava8ApplicationTests {
 
   private static final String A_VALUE = "A";
   private static final String B_VALUE = "A";
+
+  @Test
+  public void mainTest() throws Exception {
+    assertNotNull(new TestingActionsSpringBootJava11Application());
+  }
 
   @Test
   void justASimpleTest() throws Exception {
